@@ -1,6 +1,6 @@
 ﻿namespace Leetcode._212_Word_Search_2;
 
-record Node
+public record Node
 {
     public char Value;
     public Dictionary<char,Node> Children;

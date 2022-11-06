@@ -1,5 +1,5 @@
 using Leetcode._212_Word_Search_2;
-namespace LeetCodeTests;
+namespace LeetCodeTests._212_Word_Search_2;
 
 public class BaseCases {
     //XUnit inlineData doesn't allow for multi-demensional arrays.
@@ -13,10 +13,10 @@ public class BaseCases {
     [Fact]
     public void WordSearchBaseCase1() {
         string[] words = new string[] { "oath", "pea", "eat", "rain" };
-        string[] output = new string[] { "eat", "oath" };
+        string[] output = new string[] { "oath", "eat" };
 
         SearchWord search = new();
-        var sut = search.FindWords(baseCase1Board,words);
+        var sut = search.FindWords( baseCase1Board,words.AsSpan());
 
         Assert.NotEmpty(sut);
         Assert.Equal(output.Length, sut.Count());
@@ -31,8 +31,8 @@ public class BaseCases {
         string[] output = Array.Empty<string>();
 
         SearchWord search = new();
-        var sut = search.FindWords(baseCase2Board, words.AsSpan());
-
+        var sut = search.FindWords( baseCase2Board, words.AsSpan());
+        
         Assert.Empty(sut);
     }
 }
