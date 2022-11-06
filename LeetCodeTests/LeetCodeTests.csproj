@@ -25,4 +25,8 @@
     <ProjectReference Include="..\Leetcode\Leetcode.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="899 Orderly Que\" />
+  </ItemGroup>
+
 </Project>
