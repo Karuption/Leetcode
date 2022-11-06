@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Leetcode._212_Word_Search_2;
+﻿namespace Leetcode._212_Word_Search_2;
 
 public class SearchWord {
     private Trie _trie;
@@ -17,9 +11,9 @@ public class SearchWord {
 
         HashSet<string> output = new();
 
-        for (int r = 0; r < _board.Length; r++) {
-            for (int c = 0; c < _board[r].Length; c++) {
-                DFS(r, c, String.Empty, ref output);
+        for (var r = 0; r < _board.Length; r++) {
+            for (var c = 0; c < _board[r].Length; c++) {
+                DFS(r, c, string.Empty, ref output);
             }
         }
 
@@ -30,9 +24,9 @@ public class SearchWord {
     public void DFS(int row, int col, string q, ref HashSet<string> output) {
         //Guard for out of bound index or if the node has already been visited
         if (row < 0 || col < 0 || col >= _board[0].Length || row >= _board.Length || _visited[row, col])
-        return;
+            return;
 
-        string sString = q + _board[row][col];
+        var sString = q + _board[row][col];
 
         if (_trie.StartsWith(sString))
             _visited[row, col] = true;
@@ -41,7 +35,7 @@ public class SearchWord {
 
         if (_trie.Search(sString)) {
             _trie.Remove(sString);
-            output.Add(sString);
+            _ = output.Add(sString);
         }
 
         DFS(row + 1, col, sString, ref output);
@@ -50,6 +44,5 @@ public class SearchWord {
         DFS(row, col - 1, sString, ref output);
 
         _visited[row, col] = false;
-        return;
     }
 }

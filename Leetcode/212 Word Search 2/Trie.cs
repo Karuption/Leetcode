@@ -1,32 +1,30 @@
-﻿using Microsoft.Win32.SafeHandles;
-
-namespace Leetcode._212_Word_Search_2;
+﻿namespace Leetcode._212_Word_Search_2;
 
 public class Trie {
-    private Dictionary<char, Node> _node = new();
+    private Dictionary<char, Node> _rootNode = new();
     public char EndOfWord { get; init; }
 
     public Trie(ReadOnlySpan<string> words, char endOfWord) {
         EndOfWord = endOfWord;
 
         foreach (var word in words)
-            this.Insert(word);
+            Insert(word);
     }
+    //A requirement is that words are unique, so no checking if marker is present
+    public void Insert(ReadOnlySpan<char> word) {
+        var current = _rootNode;
 
-    public void Insert(string word) {
-        ReadOnlySpan<char> markedWord = word + EndOfWord;
-        var current = _node;
-
-        foreach (var c in markedWord) {
+        foreach (var c in word) {
             if (!current.ContainsKey(c))
                 current.Add(c, new Node(c));
 
             current = current[c].Children;
         }
+        current.Add(EndOfWord, new(EndOfWord));
     }
 
     public bool Search(ReadOnlySpan<char> word) {
-        var current = _node;
+        var current = _rootNode;
 
         foreach (var c in word) {
             if (current.TryGetValue(c, out var temp))
@@ -39,11 +37,10 @@ public class Trie {
     }
 
     public bool StartsWith(ReadOnlySpan<char> word) {
-        var current = _node;
-        Node? temp;
+        var current = _rootNode;
 
         foreach (var c in word) {
-            if (current.TryGetValue(c, out temp))
+            if (current.TryGetValue(c, out var temp))
                 current = temp.Children;
             else
                 return false;
@@ -53,7 +50,7 @@ public class Trie {
     }
 
     public void Remove(ReadOnlySpan<char> word) {
-        var current = _node;
+        var current = _rootNode;
         Stack<Node> stack = new();
 
         //finding end of the word and pushing to a stack
@@ -66,23 +63,23 @@ public class Trie {
             }
         }
 
-        //remove EOW marker
+        //check if EOW marker is present and return early or remove the marker
         if (!current.ContainsKey(EndOfWord))
             return;
-        current.Remove(EndOfWord);
+        _ = current.Remove(EndOfWord);
 
-        //remove any parents that don't have other paths
-        Node removal=stack.Pop();
-        while (stack.Count > 0) {
+        //remove any nodes that don't have other paths
+        var removal = stack.Pop();
+        while (stack.Count > 1) {
             if (removal.Children.Count == 0) {
-                stack.Peek().Children.Remove(removal.Value);
+                _ = stack.Peek().Children.Remove(removal.Value);
             }
-            removal=stack.Pop();
+            removal = stack.Pop();
         }
     }
 
     public void Remove(IReadOnlyCollection<string> words) {
         foreach (var word in words)
-            this.Remove(word);
+            Remove(word);
     }
 }
