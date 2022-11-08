@@ -2,7 +2,7 @@
 
 namespace LeetCodeTests._1323_Maximum_69_Number;
 
-public class Class1 {
+public class BaseCase {
     [Theory]
     [InlineData(9996, 9999)]
     [InlineData(9669, 9969)]

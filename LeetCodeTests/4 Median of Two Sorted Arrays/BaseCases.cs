@@ -18,6 +18,6 @@ public class BaseCases {
 
         double result = sut.FindMedianSortedArrays(new[] { 1d, 2d }, new[] { 3d, 4d });
 
-        Assert.Equal(2, result);
+        Assert.Equal(2.5, result);
     }
 }
