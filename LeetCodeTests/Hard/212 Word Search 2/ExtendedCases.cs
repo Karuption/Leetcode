@@ -1,6 +1,6 @@
-﻿using Leetcode._212_Word_Search_2;
+﻿using Leetcode.Hard._212_Word_Search_2;
 
-namespace LeetCodeTests._212_Word_Search_2;
+namespace LeetCodeTests.Hard._212_Word_Search_2;
 
 public class ExtendedCases
 {

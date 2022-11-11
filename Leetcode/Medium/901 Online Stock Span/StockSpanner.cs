@@ -1,4 +1,4 @@
-﻿namespace Leetcode._901_Online_Stock_Span;
+﻿namespace Leetcode.Medium._901_Online_Stock_Span;
 
 /**
  * Your StockSpanner object will be instantiated and called as such:

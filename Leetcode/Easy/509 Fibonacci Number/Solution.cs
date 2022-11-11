@@ -1,4 +1,4 @@
-﻿namespace Leetcode._509_Fibonacci_Number;
+﻿namespace Leetcode.Easy._509_Fibonacci_Number;
 
 public class Solution {
     //using DP

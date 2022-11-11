@@ -1,6 +1,6 @@
-﻿using Leetcode._899_Orderly_Que;
+﻿using Leetcode.Hard._899_Orderly_Que;
 
-namespace LeetCodeTests._899_Orderly_Que;
+namespace LeetCodeTests.Hard._899_Orderly_Que;
 
 public class ExtendedCases {
     [Theory]

@@ -1,6 +1,6 @@
-﻿using Leetcode._1323_Maximum_69_Number;
+﻿using Leetcode.Easy._1323_Maximum_69_Number;
 
-namespace LeetCodeTests._1323_Maximum_69_Number;
+namespace LeetCodeTests.Easy._1323_Maximum_69_Number;
 
 public class BaseCase {
     [Theory]

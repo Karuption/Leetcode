@@ -1,4 +1,4 @@
-﻿namespace Leetcode._4_Median_of_Two_Sorted_Arrays;
+﻿namespace Leetcode.Hard._4_Median_of_Two_Sorted_Arrays;
 
 public class Solution {
     public double FindMedianSortedArrays(double[] nums1, double[] nums2) {

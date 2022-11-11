@@ -1,4 +1,4 @@
-﻿namespace Leetcode._212_Word_Search_2;
+﻿namespace Leetcode.Hard._212_Word_Search_2;
 
 public class Trie {
     private Dictionary<char, Node> _rootNode = new();

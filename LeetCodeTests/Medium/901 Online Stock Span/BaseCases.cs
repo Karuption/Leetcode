@@ -1,6 +1,6 @@
-﻿using Leetcode._901_Online_Stock_Span;
+﻿using Leetcode.Medium._901_Online_Stock_Span;
 
-namespace LeetCodeTests._901_Online_Stock_Span;
+namespace LeetCodeTests.Medium._901_Online_Stock_Span;
 
 public class BaseCases {
     [Theory]

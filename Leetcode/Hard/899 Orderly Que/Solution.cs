@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Leetcode._899_Orderly_Que;
+namespace Leetcode.Hard._899_Orderly_Que;
 
 public class Solution {
     public string OrderlyQueue(string s, int k) {

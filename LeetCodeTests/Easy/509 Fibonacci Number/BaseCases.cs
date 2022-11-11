@@ -1,6 +1,6 @@
-﻿using Leetcode._509_Fibonacci_Number;
+﻿using Leetcode.Easy._509_Fibonacci_Number;
 
-namespace LeetCodeTests._509_Fibonacci_Number;
+namespace LeetCodeTests.Easy._509_Fibonacci_Number;
 
 public class BaseCases {
     [Theory]
