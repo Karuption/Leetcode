@@ -8,6 +8,7 @@ public class MedianFinder {
         var right = _data.Count;
         int middle;
         int compare;
+
         while (left < right) {
             middle = left + (right - left) / 2;
             compare = _data[middle].CompareTo(num);
