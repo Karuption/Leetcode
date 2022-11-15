@@ -13,20 +13,21 @@
  * }
  * }
  */
-internal abstract class TreeNode {
+public abstract class TreeNode {
     public int val;
     public TreeNode left;
     public TreeNode right;
 }
 
 public class Solution {
+    private int count = 0;
     public int CountNodes(TreeNode root) {
         if (root == null) return 0;
-        var count = 1;
-        if (root.left != null) count += CountNodes(root.left);
+        
+        this.count++;
+        CountNodes(root.left);
+        CountNodes(root.right);
 
-        if (root.right != null) count += CountNodes(root.right);
-
-        return count;
+        return this.count;
     }
 }
