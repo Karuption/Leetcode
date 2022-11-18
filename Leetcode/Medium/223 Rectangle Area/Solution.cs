@@ -7,12 +7,10 @@ public class Solution {
         var tx = Math.Min(ax2, bx2);
         var ty = Math.Min(ay2, by2);
 
-        int total = (ax2 - ax1) * (ay2 - ay1) +
+        var total = (ax2 - ax1) * (ay2 - ay1) +
                     (bx2 - bx1) * (by2 - by1);
 
-        if (tx > bx && ty > by) {
-            return total - (tx - bx) * (ty - by);
-        }
+        if (tx > bx && ty > by) return total - (tx - bx) * (ty - by);
         return total;
     }
 }
