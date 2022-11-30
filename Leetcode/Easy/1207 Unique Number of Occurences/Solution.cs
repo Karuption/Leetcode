@@ -11,6 +11,14 @@ public class Solution {
                 Occurences[arr[i]] = 1;
         }
 
-        return Occurences.Values.Count == Occurences.Values.Distinct().Count();
+        HashSet<int> set = new();
+
+        foreach (var k in Occurences.Keys) {
+            if (set.Contains(Occurences[k]))
+                return false;
+            set.Add(Occurences[k]);
+        }
+
+        return true;
     }
 }
