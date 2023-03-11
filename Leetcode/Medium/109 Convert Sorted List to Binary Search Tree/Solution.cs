@@ -52,35 +52,71 @@ public class ListNode {
 //     }
 
 // solution with span slices instead of indexes.
+// public class Solution {
+//     public TreeNode SortedListToBST(ListNode head) {
+//         if(head == null)
+//             return null;
+//         
+//         List<ListNode> list = new ();
+//         while (head != null) {
+//             list.Add(head);
+//             head = head.next;
+//         }
+//         
+//         return subTree(CollectionsMarshal.AsSpan(list));
+//     }
+//     
+//     private TreeNode subTree(ReadOnlySpan<ListNode> list) {
+//         if(list.Length == 0)
+//             return null; 
+//             
+//         var mid = list.Length / 2;
+//         var node = new TreeNode(list[mid].val);
+//
+//         if(list.Length == 1)
+//             return node;
+//         
+//         node.left = subTree(list.Slice(0, mid));
+//         
+//         if(mid!=list.Length-1)
+//             node.right = subTree(list.Slice(mid+1));
+//         
+//         return node;
+//     }
+
+//solution with linked list instead of list
 public class Solution {
     public TreeNode SortedListToBST(ListNode head) {
         if(head == null)
             return null;
         
-        List<ListNode> list = new ();
-        while (head != null) {
-            list.Add(head);
-            head = head.next;
-        }
-        
-        return subTree(CollectionsMarshal.AsSpan(list));
+        return getMid(head);
     }
     
-    private TreeNode subTree(ReadOnlySpan<ListNode> list) {
-        if(list.Length == 0)
+    private TreeNode getMid(ListNode head) {
+        if (head == null)
             return null; 
-            
-        var mid = list.Length / 2;
-        var node = new TreeNode(list[mid].val);
+        
+        ListNode previous = null;
+        ListNode slow = head;
+        ListNode fast = head;
+        
+        while (fast.next != null && fast.next.next != null) {
+            previous = slow;
+            slow = slow.next;
+            fast = fast.next.next;
+        }
 
-        if(list.Length == 1)
-            return node;
+        if(previous != null)
+            previous.next = null; //prevent cycles and is destructive to the linked list.
+
+        TreeNode root = new(slow.val);
+
+        if(previous != null)
+            root.left = getMid(head);
+
+        root.right = getMid(slow?.next);
         
-        node.left = subTree(list.Slice(0, mid));
-        
-        if(mid!=list.Length-1)
-            node.right = subTree(list.Slice(mid+1));
-        
-        return node;
+        return root;
     }
 }
