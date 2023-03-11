@@ -24,7 +24,34 @@ public class ListNode {
      }
  }
  
-//naive solution
+//initial solution
+// public class Solution {
+//     public TreeNode SortedListToBST(ListNode head) {
+//         if(head == null)
+//             return null;
+//         
+//         List<ListNode> list = new ();
+//         while (head != null) {
+//             list.Add(head);
+//             head = head.next;
+//         }
+//         
+//         return subTree(CollectionsMarshal.AsSpan(list), 0, list.Count - 1);
+//     }
+//     
+//     private TreeNode subTree(ReadOnlySpan<ListNode> list, int start, int end) {
+//         if (start > end)
+//             return null;
+//         
+//         var mid = (start + end) / 2;
+//         var node = new TreeNode(list[mid].val);
+//         node.left = subTree(list, start, mid - 1);
+//         node.right = subTree(list, mid + 1, end);
+//         
+//         return node;
+//     }
+
+// solution with span slices instead of indexes.
 public class Solution {
     public TreeNode SortedListToBST(ListNode head) {
         if(head == null)
@@ -36,17 +63,23 @@ public class Solution {
             head = head.next;
         }
         
-        return subTree(CollectionsMarshal.AsSpan(list), 0, list.Count - 1);
+        return subTree(CollectionsMarshal.AsSpan(list));
     }
     
-    private TreeNode subTree(ReadOnlySpan<ListNode> list, int start, int end) {
-        if (start > end)
-            return null;
-        
-        var mid = (start + end) / 2;
+    private TreeNode subTree(ReadOnlySpan<ListNode> list) {
+        if(list.Length == 0)
+            return null; 
+            
+        var mid = list.Length / 2;
         var node = new TreeNode(list[mid].val);
-        node.left = subTree(list, start, mid - 1);
-        node.right = subTree(list, mid + 1, end);
+
+        if(list.Length == 1)
+            return node;
+        
+        node.left = subTree(list.Slice(0, mid));
+        
+        if(mid!=list.Length-1)
+            node.right = subTree(list.Slice(mid+1));
         
         return node;
     }
