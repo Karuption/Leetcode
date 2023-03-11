@@ -1,62 +1,55 @@
 ﻿namespace Leetcode.Hard._4_Median_of_Two_Sorted_Arrays;
 
 public class Solution {
-    public double FindMedianSortedArrays(double[] nums1, double[] nums2) {
-        var leftMostTarget = (nums1.Length + nums2.Length + 1) / 2;
-        var averagingRequired = (nums1.Length + nums2.Length) % 2 == 0 ? true : false;
+    PriorityQueue<int, int> left = new();
+    PriorityQueue<int, int> right = new();
+    
+    public double FindMedianSortedArrays(int[] nums1, int[] nums2) {
+        int l = 0;
+        int r = 0;
 
-        var i = 0;
-        var j = 0;
-        var totalCount = 0;
-
-        double l = 0;
-
-        while (i < nums1.Length && j < nums2.Length) {
-            //figure out the min and move the corrisponding pointer
-            //while staying in array bounds
-            totalCount++;
-            if (nums1[i] < nums2[j]) {
-                if (totalCount == leftMostTarget) {
-                    l = nums1[i];
-                    if (!averagingRequired)
-                        return l;
-                }
-                else if (totalCount == leftMostTarget + 1) {
-                    return (l + nums1[i]) / 2;
-                }
-
-                i++;
-            }
-            else {
-                if (totalCount == leftMostTarget) {
-                    l = nums2[j];
-                    if (!averagingRequired)
-                        return l;
-                }
-                else if (totalCount == leftMostTarget + 1) {
-                    return (l + nums2[j]) / 2;
-                }
-
-                j++;
-            }
+        //pick the next correct number until one list is exhausted
+        while (l < nums1.Length && r < nums2.Length) {
+            if (nums1[l] > nums2[r]) 
+                queueAdd(nums1[l++]);
+            else
+                queueAdd(nums2[r++]);
         }
 
-        if (i == nums1.Length) {
-            if (totalCount == leftMostTarget) //if we already got l
-                return averagingRequired ? (l + nums2[leftMostTarget - totalCount]) / 2 : nums2[totalCount];
+        //add whatever list is not exhausted
+        while (r < nums2.Length)
+            queueAdd(nums2[r++]);
+        
+        while (l < nums1.Length)
+            queueAdd(nums1[l++]);
 
-            return averagingRequired
-                ? (nums2[leftMostTarget - totalCount - 1] + nums2[leftMostTarget - totalCount]) / 2
-                : nums2[leftMostTarget - totalCount - 1];
+        //return logic: if they are equal, we need to average
+        //otherwise, take the top of the one that has more items
+        if (left.Count > right.Count)
+            return left.Dequeue();
+
+        if (right.Count > left.Count)
+            return right.Dequeue();
+
+        return (left.Dequeue() + right.Dequeue()) / 2d;
+    }
+
+    private void queueAdd(int item) {
+        if (left.Count==0 || item < left.Peek())
+            left.Enqueue(item, -item);
+        else
+            right.Enqueue(item, item);
+
+        ballance();
+    }
+
+    private void ballance() {
+        if(left.Count > right.Count+1) {
+            right.Enqueue(left.Peek(), left.Dequeue());
+            return;
         }
 
-        if (totalCount == leftMostTarget)
-            return averagingRequired
-                ? (l + nums1[leftMostTarget - totalCount]) / 2
-                : nums1[leftMostTarget - totalCount - 1];
-
-        return averagingRequired
-            ? (nums1[leftMostTarget - totalCount - 1] + nums1[leftMostTarget - totalCount]) / 2
-            : nums1[leftMostTarget - totalCount - 1];
+        if(right.Count > left.Count+1)
+            left.Enqueue(right.Peek(),-right.Dequeue());
     }
 }
