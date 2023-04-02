@@ -1,16 +1,7 @@
-namespace Leetcode.Medium._382_Linked_List_Random_Node; 
+using Leetcode.LeetCodeTypes;
 
+namespace Leetcode.Medium._382_Linked_List_Random_Node;
 
-// Definition for singly-linked list.
- public class ListNode {
-     public int val;
-     public ListNode next;
-     public ListNode(int val=0, ListNode next=null) {
-         this.val = val;
-         this.next = next;
-     }
- }
- 
 public class Solution {
     private ListNode _head;
     private int _count;

@@ -1,17 +1,6 @@
-namespace Leetcode.Medium._142_Linked_List_Cycle_II; 
+using Leetcode.LeetCodeTypes;
 
-
-//  Definition for singly-linked list.
-public class ListNode {
-    public int val;
-    public ListNode? next;
-
-    public ListNode(int x) {
-        val = x;
-        next = null;
-
-    }
-}
+namespace Leetcode.Medium._142_Linked_List_Cycle_II;
 
 public class Solution {
     public ListNode? DetectCycle(ListNode? head) {

@@ -1,34 +1,40 @@
+using Leetcode.LeetCodeTypes;
 using Leetcode.Medium._142_Linked_List_Cycle_II;
+using LeetCodeTests.Helpers;
+
 namespace LeetCodeTests.Medium._142_Linked_List_Cycle_II;
 
 public class BaseCases {
     [Theory]
-    [InlineData(new int[] { 3, 2, 0, -4 }, 1)]
-    [InlineData(new []{1,2}, 0)]
-    [InlineData(new []{1}, -1)]
-    public void BaseCase(int [] linkedList, int position) {
-        var head = new ListNode(linkedList[0]);
-        ListNode? last = head;
-        ListNode? pos = (position == 0)
-            ?head
-            :null;
-        
-        for(int i = 1; i< linkedList.Length; i++) {
-            var node = new ListNode(linkedList[i]);
-            if (i != linkedList.Length - 1) {
-                last.next = node;
-            } else {
-                last.next = node;
-                node.next = pos;
-            }
-            last = node;
-            if (i == position)
-                pos = node;
+    [InlineData(new[] { 3, 2, 0, -4 }, 1)]
+    [InlineData(new[] { 1, 2 }, 0)]
+    [InlineData(new[] { 1 }, -1)]
+    public void BaseCase(int[] linkedList, int expectedPosition) {
+        var head = linkedList.ToListNode();
+        ListNode expected = null;
+
+        if (expectedPosition >= 0) {
+            var current = head;
+            var i = 0;
+            //seek to the expected position
+            while (i++ < expectedPosition)
+                current = current.next;
+
+            //set the instance to the expected position
+            expected = current;
+
+            //find the end of the linked list
+            while (current.next != null)
+                current = current.next;
+
+            //create the cycle
+            current.next = expected;
         }
-        
+
         var solution = new Solution();
-        var result = solution.DetectCycle(head);
-        
-        Assert.Equal(pos, result);
+
+        var actual = solution.DetectCycle(head);
+
+        Assert.Equal(expected, actual);
     }
 }

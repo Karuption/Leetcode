@@ -1,19 +1,6 @@
-﻿namespace Leetcode.Easy._226_Invert_Binary_Tree;
+﻿using Leetcode.LeetCodeTypes;
 
-/**
- * * Definition for a binary tree node.
- */
-public class TreeNode {
-    public int val;
-    public TreeNode left;
-    public TreeNode right;
-
-    public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
+namespace Leetcode.Easy._226_Invert_Binary_Tree;
 
 public class Solution {
     public TreeNode? InvertTree(TreeNode root) {
