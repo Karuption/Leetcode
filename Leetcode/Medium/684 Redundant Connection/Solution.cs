@@ -1,8 +1,10 @@
-﻿namespace Leetcode.Medium._684_Redundant_Connection;
+﻿using System.Runtime.CompilerServices;
+
+namespace Leetcode.Medium._684_Redundant_Connection;
 
 public class Solution {
     public int[] FindRedundantConnection(int[][] edges) {
-        var unionFind = new UnionFind(edges.Length);
+        UnionFind<int> unionFind = new(Enumerable.Range(1, edges.Length));
         foreach (var edge in edges) {
             if (!unionFind.Union(edge))
                 return edge;
@@ -12,25 +14,31 @@ public class Solution {
     }
 }
 
-public class UnionFind {
+public class UnionFind<T> where T : notnull {
+    private readonly Dictionary<T, int> _symbolResolver;
     private readonly int[] _elements;
     private readonly int[] _size;
     public int Count { get; private set; }
 
-    public UnionFind(int count) {
-        count++;
-        _elements = Enumerable.Range(0, count).ToArray();
-        _size = new int[count].Select(x => 1).ToArray();
-        Count = count;
+    public UnionFind(IEnumerable<T> symbols) {
+        T[] symbolsArray = symbols as T[] ?? symbols.ToArray();
+        _elements = Enumerable.Range(0, symbolsArray.Count()).ToArray();
+        _symbolResolver = new Dictionary<T, int>(_elements.Length);
+        for (var i = 0; i < _elements.Length; i++)
+            _symbolResolver.Add(symbolsArray[i], i);
+
+        _size = new int[_elements.Length].Select(x => 1).ToArray();
+        Count = _elements.Length;
     }
 
-    public bool Union(int[] edge) {
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public bool Union(T[] edge) {
         return Union(edge[0], edge[1]);
     }
 
-    public bool Union(int source, int destination) {
-        var sourceRoot = Find(source);
-        var destRoot = Find(destination);
+    public bool Union(T source, T destination) {
+        var sourceRoot = Find(_symbolResolver[source]);
+        var destRoot = Find(_symbolResolver[destination]);
 
         if (sourceRoot == destRoot)
             return false;
