@@ -69,6 +69,10 @@ ScaffoldingReadMe.txt
 # StyleCop
 StyleCopReport.xml
 
+# Rider files
+.idea/
+*.DotSettings.user
+
 # Files built by Visual Studio
 *_i.c
 *_p.c
