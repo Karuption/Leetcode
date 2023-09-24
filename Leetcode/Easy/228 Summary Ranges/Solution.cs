@@ -2,32 +2,21 @@ namespace Leetcode.Easy._228_Summary_Ranges;
 
 public class Solution {
     public IList<string> SummaryRanges(int[] nums) {
-        if(nums.Length < 1)
-            return new List<string>();
-
-        int lastValue = nums[0];
-        int start = nums[0];
+        if (nums.Length < 1)
+            return Array.Empty<string>();
+        
+        var start = nums[0];
         List<string> output = new();
 
-
-        for(int i = 1; i < nums.Length; i++) {
-            if(nums[i] != lastValue + 1) {
-                if(start == lastValue)
-                    output.Add(lastValue.ToString());
-                else
-                    output.Add($"{start}->{lastValue}");
-
-                start = nums[i];
-            }
-
-            lastValue = nums[i];
+        for (var i = 0; i < nums.Length - 1; i++) {
+            if(nums[i+1] == nums[i] + 1) continue;
+            
+            output.Add(start == nums[i] ? start.ToString() : $"{start}->{nums[i]}");
+            start = nums[i+1];
         }
-
-        if(start == lastValue)
-            output.Add(lastValue.ToString());
-        else
-            output.Add($"{start}->{lastValue}");
-
+        
+        output.Add(start == nums[^1] ? start.ToString() : $"{start}->{nums[^1]}");
+        
         return output;
     }
 }
