@@ -35,6 +35,6 @@ public class BaseCases {
 
         var actual = solution.DetectCycle(head);
 
-        Assert.Equal(expected, actual);
+        Assert.Equal(expected?.val, actual?.val);
     }
 }

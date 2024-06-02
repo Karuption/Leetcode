@@ -15,6 +15,6 @@ public class SolutionTests {
         var sut = new Solution();
         var actual = sut.MergeTwoLists(list1, list2);
         
-        Assert.Equal(expected, actual.ToList().ToArray());
+        Assert.Equal(expected, actual?.ToArray() ?? []);
     }
 }
