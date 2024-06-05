@@ -1,8 +1,11 @@
 ﻿using System.Collections;
+using System.Diagnostics;
 
 namespace Leetcode.LeetCodeTypes;
 
-public class ListNode:IEnumerable<int> {
+[DebuggerTypeProxy(typeof(ListNodeDebugView))]
+[DebuggerDisplay("{ToString(),raw}")]
+public class ListNode : IEnumerable<int> {
     public int val;
     public ListNode? next;
 
@@ -18,23 +21,25 @@ public class ListNode:IEnumerable<int> {
     IEnumerator IEnumerable.GetEnumerator() {
         return GetEnumerator();
     }
+
+    public override string ToString() {
+        return $"Value: {val}";
+    }
 }
 
-public struct ListNodeEnumerator:IEnumerator<int> {
+public struct ListNodeEnumerator : IEnumerator<int> {
     public int Current => (int)_currentListNode?.val!;
     object IEnumerator.Current => Current;
-    private readonly ListNode _head;
-    private ListNode _currentListNode;
+    
+    private readonly ListNode? _head;
+    private ListNode? _currentListNode;
 
     public ListNodeEnumerator(ListNode head) {
         _currentListNode = _head = new(0, head);
     }
     public bool MoveNext() {
-        if (!(_currentListNode?.next is { } node)) {
-            return false;
-        } 
-        _currentListNode = node;
-        return true;
+        _currentListNode = _currentListNode?.next;
+        return _currentListNode is not null;
     }
 
     public void Reset() {
@@ -42,4 +47,13 @@ public struct ListNodeEnumerator:IEnumerator<int> {
     }
 
     public void Dispose() {  }
+}
+
+internal sealed class ListNodeDebugView {
+    private readonly ListNode _head;
+    [DebuggerBrowsable(DebuggerBrowsableState.RootHidden)]
+    public int[] Nodes => _head.ToArray();
+    public ListNodeDebugView(ListNode node) {
+        _head = node;
+    }
 }
