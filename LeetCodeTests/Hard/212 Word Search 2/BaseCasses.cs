@@ -1,4 +1,4 @@
-using Leetcode.Hard._212_Word_Search_2;
+using LeetCode.Hard._212_Word_Search_2;
 
 namespace LeetCodeTests.Hard._212_Word_Search_2;
 

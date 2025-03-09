@@ -1,4 +1,4 @@
-﻿using Leetcode.LeetCodeTypes;
+﻿using LeetCode.LeetCodeTypes;
 
 namespace LeetCodeTests.Helpers;
 

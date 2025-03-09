@@ -1,4 +1,4 @@
-using Leetcode.Medium._1493_Longest_Subarray_of_1_s_After_Deleting_One_Element;
+using LeetCode.Medium._1493_Longest_Subarray_of_1_s_After_Deleting_One_Element;
 
 namespace LeetCodeTests.Medium._1493_Longest_Subarray_of_1_s_After_Deleting_One_Element;
 

@@ -1,4 +1,4 @@
-﻿using Leetcode.Medium._740_Delete_and_Earn;
+﻿using LeetCode.Medium._740_Delete_and_Earn;
 
 namespace LeetCodeTests.Medium._740_Delete_and_Earn;
 

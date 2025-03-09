@@ -1,4 +1,5 @@
-using Leetcode.Medium._73_Set_Matrix_Zeroes;
+using LeetCode.Medium._73_Set_Matrix_Zeroes;
+
 namespace LeetCodeTests.Medium._73_Set_Matrix_Zeroes; 
 
 public class SolutionTests {

@@ -1,4 +1,5 @@
-using Leetcode.Medium._1647_Minimum_Deletions_to_Make_Character_Frequencies_Unique;
+using LeetCode.Medium._1647_Minimum_Deletions_to_Make_Character_Frequencies_Unique;
+
 namespace LeetCodeTests.Medium._1647_Minimum_Deletions_to_Make_Character_Frequencies_Unique; 
 
 public class SolutionTests {

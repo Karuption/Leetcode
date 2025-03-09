@@ -1,4 +1,4 @@
-﻿using Leetcode.Hard._4_Median_of_Two_Sorted_Arrays;
+﻿using LeetCode.Hard._4_Median_of_Two_Sorted_Arrays;
 
 namespace LeetCodeTests.Hard._4_Median_of_Two_Sorted_Arrays;
 

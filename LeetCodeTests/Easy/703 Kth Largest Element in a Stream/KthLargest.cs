@@ -10,7 +10,7 @@ public class KthLargest {
         new[] { 3, 2, 3, 1, 2, 4, 5, 5, 6, 7, 7, 8, 2, 3, 1, 1, 1, 10, 11, 5, 6, 2, 4, 7, 8, 5, 6 },
         new[] { 3, 3, 3, 3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7 })]
     public void Basecase(int k, int[] array, int[] additions, int[] expected) {
-        var sut = new Leetcode.Easy._703_Kth_Largest_Element_in_a_Stream.KthLargest(k, array);
+        var sut = new LeetCode.Easy._703_Kth_Largest_Element_in_a_Stream.KthLargest(k, array);
 
         for (var i = 0; i < additions.Length; i++) {
             var actual = sut.Add(additions[i]);

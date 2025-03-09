@@ -1,4 +1,4 @@
-﻿using Leetcode.Medium._129_Sum_Root_to_Leaf_Numbers;
+﻿using LeetCode.Medium._129_Sum_Root_to_Leaf_Numbers;
 using LeetCodeTests.Helpers;
 
 namespace LeetCodeTests.Medium._129_Sum_Root_to_Leaf_Numbers;

@@ -1,4 +1,5 @@
-using Leetcode.Medium._71_Simplify_Path;
+using LeetCode.Medium._71_Simplify_Path;
+
 namespace LeetCodeTests.Medium._71_Simplify_Path; 
 
 public class SolutionTests {

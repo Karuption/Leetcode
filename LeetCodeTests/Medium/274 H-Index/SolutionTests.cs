@@ -1,4 +1,5 @@
-using Leetcode.Medium._274_H_Index;
+using LeetCode.Medium._274_H_Index;
+
 namespace LeetCodeTests.Medium._274_H_Index; 
 
 public class SolutionTests {

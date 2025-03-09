@@ -1,5 +1,6 @@
 using System.Runtime.InteropServices;
-using Leetcode.Medium._64_Minimum_Path_Sum;
+using LeetCode.Medium._64_Minimum_Path_Sum;
+
 namespace LeetCodeTests.Medium._64_Minimum_Path_Sum; 
 
 public class BaseCases {

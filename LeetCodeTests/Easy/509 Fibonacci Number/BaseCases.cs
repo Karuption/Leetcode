@@ -1,4 +1,4 @@
-﻿using Leetcode.Easy._509_Fibonacci_Number;
+﻿using LeetCode.Easy._509_Fibonacci_Number;
 
 namespace LeetCodeTests.Easy._509_Fibonacci_Number;
 

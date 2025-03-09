@@ -1,4 +1,4 @@
-using Leetcode.Medium._221_Maximal_Square;
+using LeetCode.Medium._221_Maximal_Square;
 
 namespace LeetCodeTests.Medium._221_Maximal_Square; 
 

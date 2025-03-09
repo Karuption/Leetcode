@@ -1,4 +1,4 @@
-﻿using Leetcode.Easy._746_Min_Cost_Climbing_Stairs;
+﻿using LeetCode.Easy._746_Min_Cost_Climbing_Stairs;
 
 namespace LeetCodeTests.Easy._746_Min_Cost_Climbing_Stairs;
 

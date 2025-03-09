@@ -1,4 +1,4 @@
-﻿using Leetcode.Medium._151_Reverse_Words_in_a_String;
+﻿using LeetCode.Medium._151_Reverse_Words_in_a_String;
 
 namespace LeetCodeTests.Medium._151_Reverse_Words_in_a_String;
 

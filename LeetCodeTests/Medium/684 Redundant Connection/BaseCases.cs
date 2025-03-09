@@ -1,4 +1,4 @@
-﻿using Leetcode.Medium._684_Redundant_Connection;
+﻿using LeetCode.Medium._684_Redundant_Connection;
 
 namespace LeetCodeTests.Medium._684_Redundant_Connection;
 

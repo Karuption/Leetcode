@@ -1,5 +1,5 @@
 
-using Leetcode.Easy._1539_Kth_Missing_Positive_Number;
+using LeetCode.Easy._1539_Kth_Missing_Positive_Number;
 
 namespace LeetCodeTests.Easy._1539_Kth_Missing_Positive_Number;
 

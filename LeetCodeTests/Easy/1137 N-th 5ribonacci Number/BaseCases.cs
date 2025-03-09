@@ -1,4 +1,4 @@
-﻿using Leetcode.Easy._1137_N_th_Tribonacci_Number;
+﻿using LeetCode.Easy._1137_N_th_Tribonacci_Number;
 
 namespace LeetCodeTests.Easy._1137_N_th_5ribonacci_Number;
 

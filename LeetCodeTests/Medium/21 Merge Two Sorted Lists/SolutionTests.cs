@@ -1,4 +1,4 @@
-using Leetcode.Medium._21_Merge_Two_Sorted_Lists;
+using LeetCode.Medium._21_Merge_Two_Sorted_Lists;
 using LeetCodeTests.Helpers;
 
 namespace LeetCodeTests.Medium._21_Merge_Two_Sorted_Lists; 

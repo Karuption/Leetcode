@@ -1,4 +1,4 @@
-﻿using Leetcode.Hard._899_Orderly_Que;
+﻿using LeetCode.Hard._899_Orderly_Que;
 
 namespace LeetCodeTests.Hard._899_Orderly_Que;
 

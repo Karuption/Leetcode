@@ -1,4 +1,5 @@
-using Leetcode.Medium._62_Unique_Paths;
+using LeetCode.Medium._62_Unique_Paths;
+
 namespace LeetCodeTests.Medium._62_Unique_Paths; 
 
 public class BaseCases {

@@ -1,6 +1,6 @@
-﻿using Leetcode.Medium._438_Find_All_Anagrams_in_a_String;
+﻿using LeetCode.Medium._438_Find_All_Anagrams_in_a_String;
 
-namespace LeetCodeTests.Medium;
+namespace LeetCodeTests.Medium._438_Find_All_Anagrams_in_a_String;
 
 public class BaseCases {
     [Theory]

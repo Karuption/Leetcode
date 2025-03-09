@@ -1,4 +1,4 @@
-﻿using Leetcode.Medium._947_Most_Stones_Removed_with_Same_Row_or_Column;
+﻿using LeetCode.Medium._947_Most_Stones_Removed_with_Same_Row_or_Column;
 
 namespace LeetCodeTests.Medium._947_Most_Stones_Removed_with_Same_Row_or_Column;
 

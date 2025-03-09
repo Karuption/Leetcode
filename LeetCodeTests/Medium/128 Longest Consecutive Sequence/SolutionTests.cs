@@ -1,4 +1,5 @@
-using Leetcode.Medium._128_Longest_Consecutive_Sequence;
+using LeetCode.Medium._128_Longest_Consecutive_Sequence;
+
 namespace LeetCodeTests.Medium._128_Longest_Consecutive_Sequence; 
 
 public class SolutionTests {

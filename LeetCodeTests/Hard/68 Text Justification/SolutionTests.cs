@@ -1,4 +1,5 @@
-using Leetcode.Hard._68_Text_Justification;
+using LeetCode.Hard._68_Text_Justification;
+
 namespace LeetCodeTests.Hard._68_Text_Justification; 
 
 public class SolutionTests {

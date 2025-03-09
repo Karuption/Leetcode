@@ -1,4 +1,5 @@
-using Leetcode.Easy._228_Summary_Ranges;
+using LeetCode.Easy._228_Summary_Ranges;
+
 namespace LeetCodeTests.Easy._228_Summary_Ranges; 
 
 public class SolutionTests {

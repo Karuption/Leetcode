@@ -1,4 +1,4 @@
-﻿using Leetcode.Easy._1323_Maximum_69_Number;
+﻿using LeetCode.Easy._1323_Maximum_69_Number;
 
 namespace LeetCodeTests.Easy._1323_Maximum_69_Number;
 

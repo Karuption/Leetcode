@@ -1,4 +1,4 @@
-﻿using Leetcode.Medium._739_Daily_Temperatures;
+﻿using LeetCode.Medium._739_Daily_Temperatures;
 
 namespace LeetCodeTests.Medium._739_Daily_Temperatures;
 

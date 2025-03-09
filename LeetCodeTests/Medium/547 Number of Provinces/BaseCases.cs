@@ -1,4 +1,4 @@
-﻿using Leetcode.Medium._547_Number_of_Provinces;
+﻿using LeetCode.Medium._547_Number_of_Provinces;
 
 namespace LeetCodeTests.Medium._547_Number_of_Provinces;
 

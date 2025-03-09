@@ -1,4 +1,4 @@
-using Leetcode.Medium._931_Minimum_Falling_Path_Sum;
+using LeetCode.Medium._931_Minimum_Falling_Path_Sum;
 
 namespace LeetCodeTests.Medium._931_Minimum_Falling_Path_Sum; 
 

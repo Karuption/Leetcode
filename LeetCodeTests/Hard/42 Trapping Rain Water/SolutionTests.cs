@@ -1,4 +1,4 @@
-using Leetcode.Hard._42_Trapping_Rain_Water;
+using LeetCode.Hard._42_Trapping_Rain_Water;
 
 namespace LeetCodeTests.Hard._42_Trapping_Rain_Water; 
 

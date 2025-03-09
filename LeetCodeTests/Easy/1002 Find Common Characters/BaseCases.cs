@@ -1,5 +1,6 @@
-using Leetcode.Easy._1002._Find_Common_Characters;
-namespace LeetCodeTests.Easy._1002._Find_Common_Characters;
+using LeetCode.Easy._1002._Find_Common_Characters;
+
+namespace LeetCodeTests.Easy._1002_Find_Common_Characters;
 
 public class BaseCases {
     [Theory]

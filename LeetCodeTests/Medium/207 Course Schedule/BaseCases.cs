@@ -1,4 +1,4 @@
-﻿using Leetcode.Medium._207_Course_Schedule;
+﻿using LeetCode.Medium._207_Course_Schedule;
 
 namespace LeetCodeTests.Medium._207_Course_Schedule;
 

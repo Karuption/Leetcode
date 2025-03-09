@@ -1,4 +1,4 @@
-using Leetcode.Hard._23_Merge_k_Sorted_Lists;
+using LeetCode.Hard._23_Merge_k_Sorted_Lists;
 
 namespace LeetCodeTests.Hard._23_Merge_k_Sorted_Lists; 
 

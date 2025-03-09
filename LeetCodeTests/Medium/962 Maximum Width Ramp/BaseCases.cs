@@ -1,4 +1,4 @@
-using Leetcode.Medium._962_Maximum_Width_Ramp;
+using LeetCode.Medium._962_Maximum_Width_Ramp;
 
 namespace LeetCodeTests.Medium._962_Maximum_Width_Ramp; 
 

@@ -1,4 +1,4 @@
-﻿using Leetcode.Easy._70_Climbing_Stairs;
+﻿using LeetCode.Easy._70_Climbing_Stairs;
 
 namespace LeetCodeTests.Easy._70_Climbing_Stairs;
 

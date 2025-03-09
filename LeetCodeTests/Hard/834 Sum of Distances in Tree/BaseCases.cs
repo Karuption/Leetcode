@@ -1,4 +1,4 @@
-﻿using Leetcode.Hard._834_Sum_of_Distances_in_Tree;
+﻿using LeetCode.Hard._834_Sum_of_Distances_in_Tree;
 
 namespace LeetCodeTests.Hard._834_Sum_of_Distances_in_Tree;
 

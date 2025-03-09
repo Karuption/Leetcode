@@ -1,6 +1,6 @@
-using Leetcode.Easy._409._Longest_Palindrome;
+using LeetCode.Easy._409._Longest_Palindrome;
 
-namespace LeetCodeTests.Easy._409._Longest_Palindrome;
+namespace LeetCodeTests.Easy._409_Longest_Palindrome;
 
 public class BaseCases {
     [Theory]

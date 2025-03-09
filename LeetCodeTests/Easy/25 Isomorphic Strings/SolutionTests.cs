@@ -1,4 +1,5 @@
-using Leetcode.Easy._205_Isomorphic_Strings;
+using LeetCode.Easy._205_Isomorphic_Strings;
+
 namespace LeetCodeTests.Easy._25_Isomorphic_Strings; 
 
 public class SolutionTests {

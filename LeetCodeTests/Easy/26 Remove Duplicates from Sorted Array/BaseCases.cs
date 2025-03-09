@@ -1,4 +1,4 @@
-﻿using Leetcode.Easy._26_Remove_Duplicates_from_Sorted_Array;
+﻿using LeetCode.Easy._26_Remove_Duplicates_from_Sorted_Array;
 
 namespace LeetCodeTests.Easy._26_Remove_Duplicates_from_Sorted_Array;
 

@@ -1,7 +1,6 @@
-using System.Runtime.InteropServices.JavaScript;
-using Leetcode.Easy._1791._Find_Center_of_Star_Graph;
+using LeetCode.Easy._1791._Find_Center_of_Star_Graph;
 
-namespace LeetCodeTests.Easy._1791._Find_Center_of_Star_Graph;
+namespace LeetCodeTests.Easy._1791_Find_Center_of_Star_Graph;
 
 public class BaseCases {
 

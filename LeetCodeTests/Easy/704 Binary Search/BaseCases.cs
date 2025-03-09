@@ -1,4 +1,4 @@
-﻿using Leetcode.Easy._704_Binary_Search;
+﻿using LeetCode.Easy._704_Binary_Search;
 
 namespace LeetCodeTests.Easy._704_Binary_Search;
 

@@ -1,4 +1,4 @@
-using Leetcode.Medium._45_Jump_Game_II;
+using LeetCode.Medium._45_Jump_Game_II;
 
 namespace LeetCodeTests.Medium._45_Jump_Game_II; 
 

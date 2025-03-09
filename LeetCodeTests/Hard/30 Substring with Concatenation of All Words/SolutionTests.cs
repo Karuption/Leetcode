@@ -1,4 +1,5 @@
-using Leetcode.Hard._30_Substring_with_Concatenation_of_All_Words;
+using LeetCode.Hard._30_Substring_with_Concatenation_of_All_Words;
+
 namespace LeetCodeTests.Hard._30_Substring_with_Concatenation_of_All_Words;
 
 public class SolutionTests {

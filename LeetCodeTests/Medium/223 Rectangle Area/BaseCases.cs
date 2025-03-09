@@ -1,4 +1,4 @@
-﻿using Leetcode.Medium._223_Rectangle_Area;
+﻿using LeetCode.Medium._223_Rectangle_Area;
 
 namespace LeetCodeTests.Medium._223_Rectangle_Area;
 

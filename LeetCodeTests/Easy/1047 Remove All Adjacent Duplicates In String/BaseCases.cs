@@ -1,4 +1,4 @@
-﻿using Leetcode.Easy._1047_Remove_All_Adjacent_Duplicates_In_String;
+﻿using LeetCode.Easy._1047_Remove_All_Adjacent_Duplicates_In_String;
 
 namespace LeetCodeTests.Easy._1047_Remove_All_Adjacent_Duplicates_In_String;
 

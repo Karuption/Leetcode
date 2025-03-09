@@ -1,5 +1,5 @@
 using System.Collections;
-using Leetcode.Medium._120_Triangle;
+using LeetCode.Medium._120_Triangle;
 
 namespace LeetCodeTests.Medium._120_Triangle; 
 

@@ -1,4 +1,4 @@
-﻿using Leetcode.Easy._1971._Find_if_Path_Exists_in_Graph;
+﻿using LeetCode.Easy._1971._Find_if_Path_Exists_in_Graph;
 
 namespace LeetCodeTests.Easy._1971_Find_if_Path_Exists_in_Graph;
 

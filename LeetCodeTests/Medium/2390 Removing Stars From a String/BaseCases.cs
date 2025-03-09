@@ -1,4 +1,4 @@
-﻿using Leetcode.Medium._2390_Removing_Stars_From_a_String;
+﻿using LeetCode.Medium._2390_Removing_Stars_From_a_String;
 
 namespace LeetCodeTests.Medium._2390_Removing_Stars_From_a_String;
 

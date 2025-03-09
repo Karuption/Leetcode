@@ -1,3 +1,5 @@
+using LeetCode.Medium._2462_Total_Cost_to_Hire_K_Workers;
+
 namespace LeetCodeTests.Medium._2462_Total_Cost_to_Hire_K_Workers; 
 
 public class BaseCases {
@@ -10,7 +12,7 @@ public class BaseCases {
     [InlineData(new[]{2,2,2,2,7,12,10,2}, 7, 7, 27)]
     [InlineData(new[]{1,2,4,1}, 3, 3, 4)]
     public void BaseCase(int[] cost,int k, int candidates,int expected) {
-        var sut = new Leetcode.Medium._2462_Total_Cost_to_Hire_K_Workers.Solution();
+        var sut = new Solution();
 
         var actual = sut.TotalCost(cost, k, candidates);
         

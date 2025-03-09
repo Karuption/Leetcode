@@ -1,4 +1,4 @@
-﻿using Leetcode.Medium._213_House_Robber_2;
+﻿using LeetCode.Medium._213_House_Robber_2;
 
 namespace LeetCodeTests.Medium._213_House_Robber_2;
 

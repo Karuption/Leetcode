@@ -1,4 +1,4 @@
-﻿using Leetcode.Hard._295_Find_Median_from_Data_Stream;
+﻿using LeetCode.Hard._295_Find_Median_from_Data_Stream;
 
 namespace LeetCodeTests.Hard._295_Find_Median_from_Data_Stream;
 

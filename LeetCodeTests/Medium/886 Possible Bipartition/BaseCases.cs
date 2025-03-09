@@ -1,4 +1,4 @@
-﻿using Leetcode.Medium._886_Possible_Bipartition;
+﻿using LeetCode.Medium._886_Possible_Bipartition;
 
 namespace LeetCodeTests.Medium._886_Possible_Bipartition;
 

@@ -1,4 +1,5 @@
-using Leetcode.Medium._6_Zigzag_Conversion;
+using LeetCode.Medium._6_Zigzag_Conversion;
+
 namespace LeetCodeTests.Medium._6_Zigzag_Conversion;
 
 public class SolutionTests {

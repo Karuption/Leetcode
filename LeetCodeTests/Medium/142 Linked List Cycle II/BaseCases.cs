@@ -1,5 +1,5 @@
-using Leetcode.LeetCodeTypes;
-using Leetcode.Medium._142_Linked_List_Cycle_II;
+using LeetCode.LeetCodeTypes;
+using LeetCode.Medium._142_Linked_List_Cycle_II;
 using LeetCodeTests.Helpers;
 
 namespace LeetCodeTests.Medium._142_Linked_List_Cycle_II;

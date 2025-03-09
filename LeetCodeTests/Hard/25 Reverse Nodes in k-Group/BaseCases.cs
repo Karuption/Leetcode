@@ -1,8 +1,7 @@
-using Leetcode.LeetCodeTypes;
-using Leetcode.Hard._25._Reverse_Nodes_in_k_Group;
+using LeetCode.Hard._25._Reverse_Nodes_in_k_Group;
 using LeetCodeTests.Helpers;
 
-namespace LeetCodeTests.Hard._25._Reverse_Nodes_in_k_Group;
+namespace LeetCodeTests.Hard._25_Reverse_Nodes_in_k_Group;
 
 public class BaseCases {
     [Theory]

@@ -1,4 +1,5 @@
-using Leetcode.Medium._48_Rotate_Image;
+using LeetCode.Medium._48_Rotate_Image;
+
 namespace LeetCodeTests.Medium._48_Rotate_Image; 
 
 public class Solution_Tests {
