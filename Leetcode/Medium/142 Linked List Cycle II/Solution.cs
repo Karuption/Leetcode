@@ -4,8 +4,8 @@ namespace LeetCode.Medium._142_Linked_List_Cycle_II;
 
 public class Solution {
     public ListNode? DetectCycle(ListNode? head) {
-        ListNode? slow = head;
-        ListNode? fast = head;
+        var slow = head;
+        var fast = head;
 
         do {
             fast = fast?.next?.next;
@@ -19,8 +19,8 @@ public class Solution {
         //there is a cycle
         slow = head;
         while (fast != slow) {
-            fast = fast.next;
-            slow = slow.next;
+            fast = fast?.next;
+            slow = slow?.next;
         }
         
         return fast;

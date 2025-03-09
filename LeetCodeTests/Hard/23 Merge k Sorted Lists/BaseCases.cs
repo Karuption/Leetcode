@@ -1,4 +1,5 @@
 using LeetCode.Hard._23_Merge_k_Sorted_Lists;
+using LeetCode.LeetCodeTypes;
 
 namespace LeetCodeTests.Hard._23_Merge_k_Sorted_Lists; 
 
@@ -16,7 +17,7 @@ public class BaseCases {
         
         //Output: [1,1,2,3,4,4,5,6]
         ListNode expected = new(1, new(1, new(2, new(3, new(4, new(4, new(5, new(6))))))));
-        Assert.Equal(expected, actual, new ListComparer());
+        Assert.Equal(expected, actual, new ListComparer()!);
     }
     
     [Fact]
@@ -32,7 +33,7 @@ public class BaseCases {
         
         //Output: [1,1,2,3,4,4,5,6]
         ListNode expected = new(1, new(1, new(2, new(3, new(4, new(4, new(5, new(6))))))));
-        Assert.Equal(expected, actual, new ListComparer());
+        Assert.Equal(expected, actual, new ListComparer()!);
     }
 
     //Input: lists = []
@@ -40,26 +41,8 @@ public class BaseCases {
     [Fact]
     public void BaseCase3() {
         var sut = new Solution();
-        var actual = sut.MergeKLists(Array.Empty<ListNode>());
+        var actual = sut.MergeKLists([]);
         
         Assert.Null(actual);
-    }
-}
-
-public class ListComparer:IEqualityComparer<ListNode> {
-    public bool Equals(ListNode x, ListNode y) {
-        if (x is null && y is null)
-            return true;
-        if (ReferenceEquals(x, null))
-            return false;
-        if (ReferenceEquals(y, null))
-            return false;
-        if (x.GetType() != y.GetType())
-            return false;
-        return x.val == y.val && this.Equals(x.next,y.next);
-    }
-
-    public int GetHashCode(ListNode obj) {
-        return HashCode.Combine(obj.val, obj.next);
     }
 }

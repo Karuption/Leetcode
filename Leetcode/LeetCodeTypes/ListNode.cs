@@ -57,3 +57,22 @@ internal sealed class ListNodeDebugView {
         _head = node;
     }
 }
+
+#pragma warning disable CS8645 // Interface is already listed in the interface list with different nullability of reference types.
+public class ListComparer : IEqualityComparer<ListNode>, IEqualityComparer<ListNode?> {
+    public bool Equals(ListNode? x, ListNode? y) {
+        if (x is null && y is null)
+            return true;
+        if (ReferenceEquals(x, null))
+            return false;
+        if (ReferenceEquals(y, null))
+            return false;
+        if (x.GetType() != y.GetType())
+            return false;
+        return x.val == y.val && Equals(x.next,y.next);
+    }
+
+    public int GetHashCode(ListNode obj) {
+        return HashCode.Combine(obj.val, obj.next);
+    }
+}

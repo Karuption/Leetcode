@@ -3,22 +3,18 @@
 namespace LeetCodeTests.Helpers;
 
 public static class BinaryTreeConverter {
-    public static TreeNode ToTree(this int[] array) {
-        ArgumentNullException.ThrowIfNull(nameof(array));
-
-        return toTree(array.AsSpan(), 0) ?? new TreeNode();
+    public static TreeNode? ToTree(this int[] array) {
+        return ToTree(array, 0);
     }
 
-    private static TreeNode? toTree(ReadOnlySpan<int> array, int i) {
-        TreeNode? node = null;
-
+    private static TreeNode? ToTree(this ReadOnlySpan<int> array, int i) {
         if (i < array.Length)
-            node = new TreeNode {
+            return new TreeNode {
                 val = array[i],
-                left = toTree(array, 2 * i + 1),
-                right = toTree(array, 2 * i + 1 + 2)
+                left = ToTree(array, 2 * i + 1),
+                right = ToTree(array, 2 * i + 2)
             };
 
-        return node;
+        return null;
     }
 }

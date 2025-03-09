@@ -1,7 +1,7 @@
 namespace LeetCode.Medium._120_Triangle; 
 
 public class Solution {
-    private int[][] _memo;
+    private int[][] _memo = null!;
     public int MinimumTotal(IList<IList<int>> triangle) {
         _memo = Enumerable.Range(0, triangle.Count).Select((_,i) => Enumerable.Repeat(int.MaxValue, i+1).ToArray()).ToArray();
         return MinimumTotal_DFS(triangle, 0, 0);

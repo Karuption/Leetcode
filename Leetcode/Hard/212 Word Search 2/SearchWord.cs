@@ -1,9 +1,9 @@
 ﻿namespace LeetCode.Hard._212_Word_Search_2;
 
 public class SearchWord {
-    private Trie _trie;
-    private char[][] _board;
-    private bool[,] _visited;
+    private Trie _trie = null!;
+    private char[][] _board = null!;
+    private bool[,] _visited = null!;
     public IList<string> FindWords(char[][] board, ReadOnlySpan<string> words) {
         _trie = new(words, '$');
         _board = board;

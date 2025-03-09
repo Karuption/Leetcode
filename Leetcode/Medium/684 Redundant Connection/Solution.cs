@@ -3,7 +3,7 @@
 namespace LeetCode.Medium._684_Redundant_Connection;
 
 public class Solution {
-    public int[] FindRedundantConnection(int[][] edges) {
+    public int[]? FindRedundantConnection(int[]?[] edges) {
         UnionFind<int> unionFind = new(Enumerable.Range(1, edges.Length));
         foreach (var edge in edges) {
             if (!unionFind.Union(edge))
@@ -27,13 +27,13 @@ public class UnionFind<T> where T : notnull {
         for (var i = 0; i < _elements.Length; i++)
             _symbolResolver.Add(symbolsArray[i], i);
 
-        _size = new int[_elements.Length].Select(x => 1).ToArray();
+        _size = new int[_elements.Length].Select(_ => 1).ToArray();
         Count = _elements.Length;
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public bool Union(T[] edge) {
-        return Union(edge[0], edge[1]);
+    public bool Union(T[]? edge) {
+        return Union(edge![0], edge[1]);
     }
 
     public bool Union(T source, T destination) {

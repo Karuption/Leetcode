@@ -1,7 +1,7 @@
 ﻿namespace LeetCode.Medium._739_Daily_Temperatures;
 
 public class Solution {
-    private int[] output;
+    private int[] output = null!;
 
     public int[] DailyTemperatures(int[] temperatures) {
         Stack<(int, int)> stack = new(temperatures.Length);

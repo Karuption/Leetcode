@@ -1,15 +1,6 @@
+using LeetCode.LeetCodeTypes;
+
 namespace LeetCode.Hard._23_Merge_k_Sorted_Lists; 
-
-
-// Definition for singly-linked list.
- public class ListNode {
-     public int val;
-     public ListNode next;
-     public ListNode(int val=0, ListNode next=null) {
-         this.val = val;
-         this.next = next;
-     }
- }
 
 //Simple Initial solution, creates new nodes
 // public class Solution {
@@ -127,15 +118,15 @@ namespace LeetCode.Hard._23_Merge_k_Sorted_Lists;
 
 //Binary Merge with Spans
 public class Solution {
-    public ListNode MergeKLists(Span<ListNode> lists) {
-        if (lists == null || lists.Length == 0)
+    public ListNode? MergeKLists(Span<ListNode?> lists) {
+        if (lists.IsEmpty || lists.Length == 0)
             return null;
 
         if (lists.Length == 1)
             return lists[0];
 
         int mid = lists.Length / 2;
-        ListNode right = null;
+        ListNode? right = null;
         
         var left = MergeKLists(lists.Slice(0, mid));
         
@@ -145,7 +136,7 @@ public class Solution {
         return Merge2Lists(Merge2Lists(left,right), lists[mid]);
     }
 
-    private ListNode Merge2Lists(ListNode? list1, ListNode? list2) {
+    private ListNode? Merge2Lists(ListNode? list1, ListNode? list2) {
         ListNode head = new ListNode();
         ListNode current = head;
 

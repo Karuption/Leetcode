@@ -2,8 +2,8 @@
 
 public class Solution {
     private static readonly HashSet<int> EmptySet = new();
-    private int[] _colors;
-    private HashSet<int>?[] _set;
+    private int[] _colors = null!;
+    private HashSet<int>?[] _set = null!;
 
     public bool PossibleBipartition(int n, int[][] dislikes) {
         _set = new HashSet<int>?[n];

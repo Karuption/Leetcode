@@ -5,7 +5,7 @@ public class Solution {
     // constraints: 1 <= m, n<= 100
     // m x n matrix. Only can go right and below
     // starts at [0,0] ends at [m-1,n-1]
-    private int[][] _memo;
+    private int[][] _memo = null!;
     public int UniquePaths(int m, int n) {
         int[][] memo = Enumerable.Range(0,2).Select(x=>Enumerable.Range(0,n).Select(x=>1).ToArray()).ToArray();
         

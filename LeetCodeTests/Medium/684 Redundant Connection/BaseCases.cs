@@ -14,7 +14,7 @@ public class BaseCases {
             new[] { 1, 3 },
             new[] { 2, 3 }
         });
-        Assert.True(new[] { 2, 3 }.SequenceEqual(actual));
+        Assert.True(new[] { 2, 3 }.SequenceEqual(actual!));
     }
 
     // Input: edges = [[1,2],[2,3],[3,4],[1,4],[1,5]]
@@ -31,6 +31,6 @@ public class BaseCases {
             new[] { 1, 5 }
         });
 
-        Assert.True(new[] { 1, 4 }.SequenceEqual(actual));
+        Assert.True(new[] { 1, 4 }.SequenceEqual(actual!));
     }
 }

@@ -20,7 +20,7 @@ public class Solution {
                     if (s[i] == min)
                         sList.Add(s.Substring(i, s.Length - i) + s.Substring(0, i));
 
-                return sList.Min();
+                return sList.Min()!;
             }
 
             return s.Substring(s.IndexOf(min)) + s.Substring(0, s.IndexOf(min));

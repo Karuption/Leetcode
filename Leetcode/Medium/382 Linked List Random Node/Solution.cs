@@ -25,6 +25,6 @@ public class Solution {
             pick--;
         }
 
-        return current.val;
+        return current!.val;
     }
 }

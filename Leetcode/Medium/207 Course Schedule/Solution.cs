@@ -1,8 +1,8 @@
 ﻿namespace LeetCode.Medium._207_Course_Schedule;
 
 public class Solution {
-    private HashSet<int>[] mapping;
-    private bool[] visited;
+    private HashSet<int>[] mapping = null!;
+    private bool[] visited = null!;
 
     public bool CanFinish(int numCourses, int[][] prerequisites) {
         mapping = Enumerable.Range(0, numCourses).Select(x => new HashSet<int>()).ToArray();

@@ -1,3 +1,4 @@
+#nullable disable
 using LeetCode.LeetCodeTypes;
 using LeetCode.Medium._142_Linked_List_Cycle_II;
 using LeetCodeTests.Helpers;
@@ -18,13 +19,13 @@ public class BaseCases {
             var i = 0;
             //seek to the expected position
             while (i++ < expectedPosition)
-                current = current.next;
+                current = current?.next;
 
             //set the instance to the expected position
             expected = current;
 
             //find the end of the linked list
-            while (current.next != null)
+            while (current?.next != null)
                 current = current.next;
 
             //create the cycle

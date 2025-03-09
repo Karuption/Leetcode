@@ -2,13 +2,13 @@
 
 public class Solution {
     //climbing with memoization/DP
-    private Dictionary<int, int> dict;
+    private Dictionary<int, int> dict = null!;
 
     public int ClimbStairs(int n) {
-        dict = new Dictionary<int, int>(n);
-
-        dict[1] = 1;
-        dict[2] = 2;
+        dict = new (n) {
+            [1] = 1,
+            [2] = 2
+        };
 
         for (var i = 3; i <= n; i++) dict[i] = dict[i - 1] + dict[i - 2];
 

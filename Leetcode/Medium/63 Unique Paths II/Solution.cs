@@ -1,7 +1,7 @@
 namespace LeetCode.Medium._63_Unique_Paths_II; 
 
 public class Solution {
-    private int[][] _memo;
+    private int[][] _memo = null!;
     public int UniquePathsWithObstacles(int[][] obstacleGrid) {
         // guard against an impossible path (block at the start or end)
         if (obstacleGrid[^1][^1] == 1 || obstacleGrid[0][0] == 1)

@@ -1,4 +1,5 @@
-﻿using LeetCode.Medium._129_Sum_Root_to_Leaf_Numbers;
+﻿using LeetCode.LeetCodeTypes;
+using LeetCode.Medium._129_Sum_Root_to_Leaf_Numbers;
 using LeetCodeTests.Helpers;
 
 namespace LeetCodeTests.Medium._129_Sum_Root_to_Leaf_Numbers;
@@ -11,5 +12,6 @@ public class BaseCases {
         var sut = new Solution();
 
         var actual = sut.SumNumbers(nums.ToTree());
+        Assert.Equal(expected, actual);
     }
 }

@@ -1,3 +1,5 @@
+#nullable disable
+
 namespace LeetCode.Medium._109_Convert_Sorted_List_to_Binary_Search_Tree; 
 
 //Definition for singly-linked list.

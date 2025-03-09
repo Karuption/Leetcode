@@ -1,7 +1,7 @@
 namespace LeetCode.Medium._64_Minimum_Path_Sum; 
 
 public class Solution {
-    private int[][] _memo;
+    private int[][] _memo = null!;
 
     public int MinPathSum(int[][] grid) {
         _memo = Enumerable.Range(0,2).Select(_=>Enumerable.Range(0,grid[0].Length).Select(_=>int.MaxValue).ToArray()).ToArray();

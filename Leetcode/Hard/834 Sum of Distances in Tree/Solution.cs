@@ -1,8 +1,9 @@
-﻿namespace LeetCode.Hard._834_Sum_of_Distances_in_Tree;
+﻿
+
+namespace LeetCode.Hard._834_Sum_of_Distances_in_Tree;
 
 public class Solution {
-    private int n;
-    private HashSet<int>?[] set;
+    private HashSet<int>?[]? set;
 
     public int[] SumOfDistancesInTree(int n, int[][] edges) {
         if (n < 2)
@@ -39,7 +40,7 @@ public class Solution {
 
             if (cost[current] == 0) {
                 cost[current] = currentCost;
-                Enqueue(set[current], currentCost + 1, q);
+                Enqueue(set?[current], currentCost + 1, q);
             }
         }
 
