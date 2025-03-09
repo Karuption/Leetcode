@@ -20,9 +20,9 @@ public class TrieTests {
 
         t.Remove("helno");
 
-        Assert.Equal(false, t.StartsWith("heln")); 
-        Assert.Equal(false, t.Search("helno")); 
-        Assert.Equal(true, t.Search("hello"));
+        Assert.False(t.StartsWith("heln")); 
+        Assert.False(t.Search("helno")); 
+        Assert.True(t.Search("hello"));
     }
 
     [Fact]
@@ -31,14 +31,15 @@ public class TrieTests {
 
         t.Remove(new []{"hello","hella", "helno"});
 
-        Assert.Equal(false, t.Search("heln")); 
-        Assert.Equal(false, t.Search("hell"));
-        Assert.Equal(false, t.Search("helno"));
-        Assert.Equal(false, t.Search("hel"));
-        Assert.Equal(false, t.StartsWith("heln")); 
-        Assert.Equal(false, t.StartsWith("hell"));
-        Assert.Equal(false, t.StartsWith("helno"));
-        Assert.Equal(true, t.StartsWith("hel"));
-        Assert.Equal(true, t.Search("help"));
+        Assert.False(t.Search("heln")); 
+        Assert.False(t.Search("hell"));
+        Assert.False(t.Search("helno"));
+        Assert.False(t.Search("hel"));
+        Assert.False(t.StartsWith("heln")); 
+        Assert.False(t.StartsWith("hell"));
+        Assert.False(t.StartsWith("helno"));
+        
+        Assert.True(t.StartsWith("hel"));
+        Assert.True(t.Search("help"));
     }
 }
