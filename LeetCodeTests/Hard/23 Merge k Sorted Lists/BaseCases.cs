@@ -42,7 +42,7 @@ public class BaseCases {
         var sut = new Solution();
         var actual = sut.MergeKLists(Array.Empty<ListNode>());
         
-        Assert.Equal(null, actual, new ListComparer());
+        Assert.Null(actual);
     }
 }
 

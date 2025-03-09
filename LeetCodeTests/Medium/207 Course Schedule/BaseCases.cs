@@ -23,7 +23,7 @@ public class BaseCases {
 
         var actual = sut.CanFinish(2, case1);
 
-        Assert.Equal(true, actual);
+        Assert.True(actual);
     }
 
     [Fact]
@@ -32,6 +32,6 @@ public class BaseCases {
 
         var actual = sut.CanFinish(2, case2);
 
-        Assert.Equal(false, actual);
+        Assert.False(actual);
     }
 }

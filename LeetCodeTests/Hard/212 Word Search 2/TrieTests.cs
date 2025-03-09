@@ -6,12 +6,12 @@ public class TrieTests {
     public void Insert_ShouldFindWordAndPrefix() {
         Trie t = new(new[] { "hello", "helno" },'$');
 
-        Assert.Equal(t.Search("hello"), true);
-        Assert.Equal(t.Search("helno"), true);
-        Assert.Equal(t.StartsWith("heln"), true);
-        Assert.Equal(t.StartsWith("hell"), true);
+        Assert.True(t.Search("hello"));
+        Assert.True(t.Search("helno"));
+        Assert.True(t.StartsWith("heln"));
+        Assert.True(t.StartsWith("hell"));
 
-        Assert.Equal(t.StartsWith("on"), false);
+        Assert.False(t.StartsWith("on"));
     }
 
     [Fact]

@@ -1,4 +1,4 @@
-namespace Leetcode.Medium._120_Triangle; 
+namespace LeetCode.Medium._120_Triangle; 
 
 public class Solution {
     private int[][] _memo;

@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Easy._704_Binary_Search;
+﻿namespace LeetCode.Easy._704_Binary_Search;
 
 public class Solution {
     public int Search(ReadOnlySpan<int> nums, int target) {

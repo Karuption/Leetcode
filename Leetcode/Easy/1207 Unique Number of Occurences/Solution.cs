@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Easy._1207_Unique_Number_of_Occurences;
+﻿namespace LeetCode.Easy._1207_Unique_Number_of_Occurences;
 
 public class Solution {
     public bool UniqueOccurrences(int[] arr) {

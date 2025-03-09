@@ -1,6 +1,4 @@
-using System.Runtime.CompilerServices;
-
-namespace Leetcode.Hard._23_Merge_k_Sorted_Lists; 
+namespace LeetCode.Hard._23_Merge_k_Sorted_Lists; 
 
 
 // Definition for singly-linked list.

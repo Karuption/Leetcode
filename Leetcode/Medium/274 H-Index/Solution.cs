@@ -1,4 +1,4 @@
-namespace Leetcode.Medium._274_H_Index; 
+namespace LeetCode.Medium._274_H_Index; 
 
 public class Solution {
     public int HIndex(int[] citations) {

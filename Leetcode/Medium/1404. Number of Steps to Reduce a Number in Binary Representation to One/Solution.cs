@@ -1,4 +1,4 @@
-namespace Leetcode.Medium._1404._Number_of_Steps_to_Reduce_a_Number_in_Binary_Representation_to_One;
+namespace LeetCode.Medium._1404._Number_of_Steps_to_Reduce_a_Number_in_Binary_Representation_to_One;
 
 public class Solution {
     public int NumSteps(string s) {

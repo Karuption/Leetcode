@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Medium._98_House_Robber;
+﻿namespace LeetCode.Medium._98_House_Robber;
 
 public class Solution {
     public int Rob(ReadOnlySpan<int> nums) {

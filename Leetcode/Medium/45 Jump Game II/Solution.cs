@@ -1,4 +1,4 @@
-namespace Leetcode.Medium._45_Jump_Game_II;
+namespace LeetCode.Medium._45_Jump_Game_II;
 
 public class Solution {
     public int Jump(int[] nums) {

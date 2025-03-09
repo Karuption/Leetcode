@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Hard._4_Median_of_Two_Sorted_Arrays;
+﻿namespace LeetCode.Hard._4_Median_of_Two_Sorted_Arrays;
 
 public class Solution {
     PriorityQueue<int, int> left = new();

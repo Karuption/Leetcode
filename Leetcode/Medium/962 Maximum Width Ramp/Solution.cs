@@ -1,4 +1,4 @@
-namespace Leetcode.Medium._962_Maximum_Width_Ramp; 
+namespace LeetCode.Medium._962_Maximum_Width_Ramp; 
 
 public class Solution {
     public int MaxWidthRamp(int[] nums) {

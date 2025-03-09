@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Medium._438_Find_All_Anagrams_in_a_String;
+﻿namespace LeetCode.Medium._438_Find_All_Anagrams_in_a_String;
 
 public class Solution {
     public IList<int> FindAnagrams(string s, string p) {

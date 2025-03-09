@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Easy._1704_Detirmine_if_String_halfs_are_alike;
+﻿namespace LeetCode.Easy._1704_Detirmine_if_String_halfs_are_alike;
 
 public class Solution {
     //Could improve by doing the left and right half at the same time. 

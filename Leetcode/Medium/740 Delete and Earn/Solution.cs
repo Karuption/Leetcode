@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Medium._740_Delete_and_Earn;
+﻿namespace LeetCode.Medium._740_Delete_and_Earn;
 
 public class Solution {
     // Memory optimized, blend counting sort(ish) with robbing houses (medium 213)

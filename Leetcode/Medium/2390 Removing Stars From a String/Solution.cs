@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Medium._2390_Removing_Stars_From_a_String;
+﻿namespace LeetCode.Medium._2390_Removing_Stars_From_a_String;
 
 public class Solution {
     public string RemoveStars(string s) {

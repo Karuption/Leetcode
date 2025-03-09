@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Hard._834_Sum_of_Distances_in_Tree;
+﻿namespace LeetCode.Hard._834_Sum_of_Distances_in_Tree;
 
 public class Solution {
     private int n;

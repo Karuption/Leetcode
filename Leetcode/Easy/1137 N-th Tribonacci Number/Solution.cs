@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Easy._1137_N_th_Tribonacci_Number;
+﻿namespace LeetCode.Easy._1137_N_th_Tribonacci_Number;
 
 public class Solution {
     public int Tribonacci(int n) {

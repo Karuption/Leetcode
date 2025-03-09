@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Leetcode.Medium._6_Zigzag_Conversion; 
+namespace LeetCode.Medium._6_Zigzag_Conversion; 
 
 public class Solution {
     public string Convert(string s, int numRows) {

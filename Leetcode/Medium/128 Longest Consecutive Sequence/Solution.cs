@@ -1,4 +1,4 @@
-namespace Leetcode.Medium._128_Longest_Consecutive_Sequence; 
+namespace LeetCode.Medium._128_Longest_Consecutive_Sequence; 
 
 public class Solution {
     public int LongestConsecutive(int[] nums) {

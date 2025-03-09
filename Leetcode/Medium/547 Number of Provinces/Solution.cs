@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Medium._547_Number_of_Provinces;
+﻿namespace LeetCode.Medium._547_Number_of_Provinces;
 // You are given an n x n matrix isConnected where isConnected[i][j] = 1
 // if the ith city and the jth city are directly connected
 // isConnected[i][j] = 0 otherwise.

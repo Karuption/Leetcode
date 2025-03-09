@@ -1,6 +1,6 @@
-using Leetcode.LeetCodeTypes;
+using LeetCode.LeetCodeTypes;
 
-namespace Leetcode.Medium._142_Linked_List_Cycle_II;
+namespace LeetCode.Medium._142_Linked_List_Cycle_II;
 
 public class Solution {
     public ListNode? DetectCycle(ListNode? head) {

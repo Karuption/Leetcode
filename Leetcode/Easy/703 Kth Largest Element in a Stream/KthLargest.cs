@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Easy._703_Kth_Largest_Element_in_a_Stream;
+﻿namespace LeetCode.Easy._703_Kth_Largest_Element_in_a_Stream;
 
 /**
  * * Your KthLargest object will be instantiated and called as such:

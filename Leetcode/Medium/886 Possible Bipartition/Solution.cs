@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Medium._886_Possible_Bipartition;
+﻿namespace LeetCode.Medium._886_Possible_Bipartition;
 
 public class Solution {
     private static readonly HashSet<int> EmptySet = new();

@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Medium._739_Daily_Temperatures;
+﻿namespace LeetCode.Medium._739_Daily_Temperatures;
 
 public class Solution {
     private int[] output;

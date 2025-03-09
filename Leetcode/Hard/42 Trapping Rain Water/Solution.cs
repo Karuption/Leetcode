@@ -1,6 +1,4 @@
-using System.Diagnostics;
-
-namespace Leetcode.Hard._42_Trapping_Rain_Water; 
+namespace LeetCode.Hard._42_Trapping_Rain_Water; 
 
 public class Solution {
     public int Trap(int[] height) {

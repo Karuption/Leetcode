@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Medium._947_Most_Stones_Removed_with_Same_Row_or_Column;
+﻿namespace LeetCode.Medium._947_Most_Stones_Removed_with_Same_Row_or_Column;
 
 public class Solution {
     public int RemoveStones(int[][] stones) {

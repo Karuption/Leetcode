@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Medium._151_Reverse_Words_in_a_String;
+﻿namespace LeetCode.Medium._151_Reverse_Words_in_a_String;
 
 public class Solution {
     public string ReverseWords(string s) {

@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Easy._70_Climbing_Stairs;
+﻿namespace LeetCode.Easy._70_Climbing_Stairs;
 
 public class Solution {
     //climbing with memoization/DP

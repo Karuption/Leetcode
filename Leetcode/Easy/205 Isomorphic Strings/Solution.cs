@@ -1,4 +1,4 @@
-namespace Leetcode.Easy._205_Isomorphic_Strings; 
+namespace LeetCode.Easy._205_Isomorphic_Strings; 
 
 public class Solution {
     public bool IsIsomorphic(string s, string t) {

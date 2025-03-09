@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Medium._207_Course_Schedule;
+﻿namespace LeetCode.Medium._207_Course_Schedule;
 
 public class Solution {
     private HashSet<int>[] mapping;

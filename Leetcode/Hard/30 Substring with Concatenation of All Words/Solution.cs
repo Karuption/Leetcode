@@ -1,4 +1,4 @@
-namespace Leetcode.Hard._30_Substring_with_Concatenation_of_All_Words; 
+namespace LeetCode.Hard._30_Substring_with_Concatenation_of_All_Words; 
 
 public class Solution {
     public IList<int> FindSubstring(string s, string[] words) {

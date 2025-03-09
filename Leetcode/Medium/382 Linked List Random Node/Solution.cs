@@ -1,6 +1,6 @@
-using Leetcode.LeetCodeTypes;
+using LeetCode.LeetCodeTypes;
 
-namespace Leetcode.Medium._382_Linked_List_Random_Node;
+namespace LeetCode.Medium._382_Linked_List_Random_Node;
 
 public class Solution {
     private ListNode _head;

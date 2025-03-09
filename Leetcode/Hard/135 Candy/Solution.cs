@@ -1,4 +1,4 @@
-namespace Leetcode.Hard._135_Candy; 
+namespace LeetCode.Hard._135_Candy; 
 
 public class Solution {
     public int Candy(int[] ratings) {

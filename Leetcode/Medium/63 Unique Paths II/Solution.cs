@@ -1,4 +1,4 @@
-namespace Leetcode.Medium._63_Unique_Paths_II; 
+namespace LeetCode.Medium._63_Unique_Paths_II; 
 
 public class Solution {
     private int[][] _memo;

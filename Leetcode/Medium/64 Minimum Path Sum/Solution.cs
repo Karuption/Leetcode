@@ -1,4 +1,4 @@
-namespace Leetcode.Medium._64_Minimum_Path_Sum; 
+namespace LeetCode.Medium._64_Minimum_Path_Sum; 
 
 public class Solution {
     private int[][] _memo;

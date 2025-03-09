@@ -1,6 +1,4 @@
-using System.Runtime.CompilerServices;
-
-namespace Leetcode.Medium._221_Maximal_Square; 
+namespace LeetCode.Medium._221_Maximal_Square; 
 
 public class Solution {
     public int MaximalSquare(char[][] matrix) {

@@ -34,7 +34,7 @@ public class BaseCases {
 
         var actual = sut.ValidPath(6, edges, source, destination);
 
-        Assert.Equal(false, actual);
+        Assert.False(actual);
     }
 
     [Fact]

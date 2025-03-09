@@ -1,4 +1,4 @@
-namespace Leetcode.Easy._409._Longest_Palindrome;
+namespace LeetCode.Easy._409._Longest_Palindrome;
 
 public class Solution {
     public int LongestPalindrome(string s) {

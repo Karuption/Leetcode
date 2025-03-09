@@ -1,4 +1,4 @@
-namespace Leetcode.Easy._1791._Find_Center_of_Star_Graph;
+namespace LeetCode.Easy._1791._Find_Center_of_Star_Graph;
 
 public class Solution {
     public int FindCenter(int[][] edges) {

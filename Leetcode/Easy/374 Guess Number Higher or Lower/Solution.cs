@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Easy._374_Guess_Number_Higher_or_Lower;
+﻿namespace LeetCode.Easy._374_Guess_Number_Higher_or_Lower;
 
 /**
  * Forward declaration of guess API.

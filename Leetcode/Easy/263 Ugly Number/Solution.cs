@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Easy._263_Ugly_Number;
+﻿namespace LeetCode.Easy._263_Ugly_Number;
 
 public class Solution {
     public bool IsUgly(int n) {

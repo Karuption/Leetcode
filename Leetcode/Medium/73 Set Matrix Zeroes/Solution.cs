@@ -1,4 +1,4 @@
-namespace Leetcode.Medium._73_Set_Matrix_Zeroes; 
+namespace LeetCode.Medium._73_Set_Matrix_Zeroes; 
 
 public class Solution {
     public void SetZeroes(int[][] matrix) {

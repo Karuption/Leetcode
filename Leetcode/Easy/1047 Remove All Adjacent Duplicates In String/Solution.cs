@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Leetcode.Easy._1047_Remove_All_Adjacent_Duplicates_In_String;
+namespace LeetCode.Easy._1047_Remove_All_Adjacent_Duplicates_In_String;
 
 public class Solution {
     //beats 86.73% in runtime

@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace Leetcode.Medium._684_Redundant_Connection;
+namespace LeetCode.Medium._684_Redundant_Connection;
 
 public class Solution {
     public int[] FindRedundantConnection(int[][] edges) {

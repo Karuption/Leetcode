@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Easy._1971._Find_if_Path_Exists_in_Graph;
+﻿namespace LeetCode.Easy._1971._Find_if_Path_Exists_in_Graph;
 
 public class Solution {
     public bool ValidPath(int n, int[][] edges, int source, int destination) {

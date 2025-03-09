@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Easy._35_Search_Insert_Position;
+﻿namespace LeetCode.Easy._35_Search_Insert_Position;
 
 public class Solution {
     public int SearchInsert(int[] nums, int target) {

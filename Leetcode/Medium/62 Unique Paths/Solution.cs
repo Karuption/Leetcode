@@ -1,6 +1,4 @@
-using System.Runtime.CompilerServices;
-
-namespace Leetcode.Medium._62_Unique_Paths; 
+namespace LeetCode.Medium._62_Unique_Paths; 
 
 public class Solution {
     // number of unique routes

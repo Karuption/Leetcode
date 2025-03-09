@@ -1,4 +1,4 @@
-namespace Leetcode.Medium._931_Minimum_Falling_Path_Sum;
+namespace LeetCode.Medium._931_Minimum_Falling_Path_Sum;
 
 public class Solution {
     public int MinFallingPathSum(int[][] matrix) {

@@ -1,7 +1,4 @@
-using System.Runtime.InteropServices;
-using System.Text;
-
-namespace Leetcode.Medium._71_Simplify_Path; 
+namespace LeetCode.Medium._71_Simplify_Path; 
 
 public class Solution {
     public string SimplifyPath(string path) {

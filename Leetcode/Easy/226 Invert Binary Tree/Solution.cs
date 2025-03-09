@@ -1,6 +1,6 @@
-﻿using Leetcode.LeetCodeTypes;
+﻿using LeetCode.LeetCodeTypes;
 
-namespace Leetcode.Easy._226_Invert_Binary_Tree;
+namespace LeetCode.Easy._226_Invert_Binary_Tree;
 
 public class Solution {
     public TreeNode? InvertTree(TreeNode root) {

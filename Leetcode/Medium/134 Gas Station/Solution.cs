@@ -1,4 +1,4 @@
-namespace Leetcode.Medium._134_Gas_Station; 
+namespace LeetCode.Medium._134_Gas_Station; 
 
 public class Solution {
     public int CanCompleteCircuit(int[] gas, int[] cost) {

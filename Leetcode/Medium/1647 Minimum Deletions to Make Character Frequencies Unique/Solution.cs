@@ -1,4 +1,4 @@
-namespace Leetcode.Medium._1647_Minimum_Deletions_to_Make_Character_Frequencies_Unique; 
+namespace LeetCode.Medium._1647_Minimum_Deletions_to_Make_Character_Frequencies_Unique; 
 
 public class Solution {
     public int MinDeletions(string s) {

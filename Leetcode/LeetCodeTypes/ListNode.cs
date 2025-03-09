@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Diagnostics;
 
-namespace Leetcode.LeetCodeTypes;
+namespace LeetCode.LeetCodeTypes;
 
 [DebuggerTypeProxy(typeof(ListNodeDebugView))]
 [DebuggerDisplay("{ToString(),raw}")]

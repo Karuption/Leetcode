@@ -1,4 +1,4 @@
-namespace Leetcode.Easy._3110._Score_of_a_String;
+namespace LeetCode.Easy._3110._Score_of_a_String;
 
 public class Solution {
     // Linq/Functional Solution

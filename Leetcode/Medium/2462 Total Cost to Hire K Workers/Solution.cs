@@ -1,7 +1,4 @@
-using System.Security.Cryptography.X509Certificates;
-using System.Xml;
-
-namespace Leetcode.Medium._2462_Total_Cost_to_Hire_K_Workers; 
+namespace LeetCode.Medium._2462_Total_Cost_to_Hire_K_Workers; 
 
 public class Solution {
     public long TotalCost(int[] costs,int k,int candidates) {

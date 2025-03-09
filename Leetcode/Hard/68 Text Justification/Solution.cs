@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Leetcode.Hard._68_Text_Justification; 
+namespace LeetCode.Hard._68_Text_Justification; 
 
 public class Solution {
     public IList<string> FullJustify(string[] words, int maxWidth) {

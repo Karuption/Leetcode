@@ -1,4 +1,4 @@
-namespace Leetcode.Easy._1002._Find_Common_Characters;
+namespace LeetCode.Easy._1002._Find_Common_Characters;
 
 public class Solution {
     public IList<string> CommonChars(string[] words) {

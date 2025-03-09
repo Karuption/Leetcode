@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Leetcode.Medium._12_Integer_to_Roman; 
+namespace LeetCode.Medium._12_Integer_to_Roman; 
 
 public class Solution {
     public string IntToRoman(int num) {

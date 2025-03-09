@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Easy._746_Min_Cost_Climbing_Stairs;
+﻿namespace LeetCode.Easy._746_Min_Cost_Climbing_Stairs;
 
 public class Solution {
     //memoized

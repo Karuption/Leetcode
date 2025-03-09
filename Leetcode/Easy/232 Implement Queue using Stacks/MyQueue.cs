@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Easy._232_Implement_Queue_using_Stacks;
+﻿namespace LeetCode.Easy._232_Implement_Queue_using_Stacks;
 
 public class MyQueue {
     private readonly Stack<int> s = new();

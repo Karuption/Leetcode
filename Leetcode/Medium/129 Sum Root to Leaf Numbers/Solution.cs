@@ -1,6 +1,6 @@
-using Leetcode.LeetCodeTypes;
+using LeetCode.LeetCodeTypes;
 
-namespace Leetcode.Medium._129_Sum_Root_to_Leaf_Numbers;
+namespace LeetCode.Medium._129_Sum_Root_to_Leaf_Numbers;
 
 public class Solution {
      public int SumNumbers(TreeNode root) {

@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Easy._1323_Maximum_69_Number;
+﻿namespace LeetCode.Easy._1323_Maximum_69_Number;
 
 public class Solution {
     //Alternate, regex method

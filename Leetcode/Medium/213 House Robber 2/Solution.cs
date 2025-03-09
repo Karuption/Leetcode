@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Medium._213_House_Robber_2;
+﻿namespace LeetCode.Medium._213_House_Robber_2;
 
 public class Solution {
     public int Rob(int[] nums) {

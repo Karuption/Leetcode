@@ -1,4 +1,4 @@
-namespace Leetcode.Easy._1539_Kth_Missing_Positive_Number; 
+namespace LeetCode.Easy._1539_Kth_Missing_Positive_Number; 
 
 public class Solution {
     // Find the kth positive integer that is missing from this array.

@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Medium._222_Count_Complete_Tree_Nodes;
+﻿namespace LeetCode.Medium._222_Count_Complete_Tree_Nodes;
 
 /**
  * Definition for a binary tree node.

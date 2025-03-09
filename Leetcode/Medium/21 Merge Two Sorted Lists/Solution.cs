@@ -1,6 +1,6 @@
-using Leetcode.LeetCodeTypes;
+using LeetCode.LeetCodeTypes;
 
-namespace Leetcode.Medium._21_Merge_Two_Sorted_Lists; 
+namespace LeetCode.Medium._21_Merge_Two_Sorted_Lists; 
 
 #nullable disable
 public class Solution {

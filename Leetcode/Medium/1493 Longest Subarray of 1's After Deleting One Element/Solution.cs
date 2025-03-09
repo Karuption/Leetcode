@@ -1,4 +1,4 @@
-namespace Leetcode.Medium._1493_Longest_Subarray_of_1_s_After_Deleting_One_Element; 
+namespace LeetCode.Medium._1493_Longest_Subarray_of_1_s_After_Deleting_One_Element; 
 
 public class Solution {
     public int LongestSubarray(int[] nums) {

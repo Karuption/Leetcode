@@ -12,6 +12,6 @@ public class ExtendedCases {
 
         var result = sut.FindMedianSortedArrays(num1, num2);
 
-        Assert.Equal(2.5, result);
+        Assert.Equal(expected, result);
     }
 }

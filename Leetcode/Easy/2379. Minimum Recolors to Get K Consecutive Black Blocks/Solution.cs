@@ -1,4 +1,4 @@
-namespace Leetcode.Easy._2379._Minimum_Recolors_to_Get_K_Consecutive_Black_Blocks;
+namespace LeetCode.Easy._2379._Minimum_Recolors_to_Get_K_Consecutive_Black_Blocks;
 
 public class Solution {
     public int MinimumRecolors(string blocks, int k) {

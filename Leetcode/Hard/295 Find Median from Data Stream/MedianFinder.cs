@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Hard._295_Find_Median_from_Data_Stream;
+﻿namespace LeetCode.Hard._295_Find_Median_from_Data_Stream;
 
 public class MedianFinder {
     private readonly List<int> _data = new();
